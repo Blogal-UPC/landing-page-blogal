@@ -14,7 +14,7 @@ header{
     background-color: #D9D9D9;
     color:black;
     text-align: left;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 .container{
     max-width: 1200px;
@@ -55,8 +55,7 @@ header{
     color: black;
     transition: color 0.3s;
     padding: 10px ;
-    display: inline-block;    
-    border-radius: px;
+    display: inline-block;
     background-color: #A4BFE7 ;
 }
 .menu a:hover{
@@ -101,7 +100,8 @@ header{
     color: black;
     padding: 15px 30px;
     text-decoration: none;
-    font: bold;
+    font-weight: bold;
+    /*font-family: Roboto, serif;*/
     border-radius: 25px;
     display: inline-block;    
     box-shadow: 2px 2px gray;
@@ -113,12 +113,12 @@ header{
 .cta-image img{
     max-width: 50%;
     height: auto;
-    align-items: right;
+    /*align-items: right;*/
     margin-left: 50%;
 }
 .footer{
     color:black;
-    padding: 20px 0px;
+    padding: 20px 0;
     background-color: #6FA5F6;
 }
 .footer-text{
