@@ -151,3 +151,18 @@ header{
     display: inline-block;
     
 }
+#testimonials{
+    margin: 5% 5%;
+}
+.testimonials-grid{
+    background-color: #6FA5F6;
+    padding:  5% 0;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 25px;
+
+}
+#testimonials img{
+    box-shadow: 2px 2px 4px black;
+    
+}
