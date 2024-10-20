@@ -37,7 +37,7 @@ p {
     line-height: 20pt;
 }
 
-small span.label {
+small, span.label {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 12pt;
