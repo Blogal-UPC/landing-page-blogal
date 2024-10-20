@@ -149,5 +149,10 @@ header{
     border-radius: 10px;
     background-color: lightgray;
     display: inline-block;
-    
+}
+.testimonials-grid{
+    background-color: #6FA5F6;
+}
+#testimonials img{
+    box-shadow: 2px 2px 4px black;
 }
