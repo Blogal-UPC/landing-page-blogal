@@ -11,6 +11,22 @@ body{
     padding: 0;
 }
 
+.area_formulario {
+    display: flex;
+    align-items: center;
+}
+
+.formulario {
+    width: 50%;
+    margin: auto;
+    background-color: var(--md-sys-color-surface);
+    border-radius: 16px;
+    max-width: fit-content;
+    padding: 50px;
+    align-content: center;
+    --md-elevation-level: 1;
+}
+
 .barra_blanca {
     /*box-sizing: border-box;*/
     background-color: #FFFFFF;
