@@ -1,87 +1,478 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Material/light.css">
+    <link rel="stylesheet" href="css/Material/dark.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Blogal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+        {
+          "imports": {
+            "@material/web/": "https://esm.run/@material/web/"
+          }
+        }
+    </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
 </head>
 
-<body>
-    <!--Incio Header-->
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="navbar-content">
-                    <h1 class="logo"><img src="assets/img/logo.png" alt=""></h1>
-                    <ul class="menu">
-                        <li><a href="#benefits">Beneficios</a></li>
-                        <li><a href="#testimonials">Testimonios</a></li>
-                        <li><a href="#demo-video">Demostración</a></li>
-                        <li><a href="#pricing">Precios</a></li>
-                        <li><a href="#about-us">Nosotros</a></li>
-                        <li><a href="#gallery">Galeria</a></li>
-                        <li><a href="#faqs">FAQs</a></li>
-                        <li><a href="#success-stories">Casos de Éxito</a></li>
-                        <li><a href="#registry">Registro</a></li>
-                    </ul>
+<body class="light">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="./js/main.js"></script>
+    <!--Inicio Header-->
+    <section id="header">
+        <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a href="#" class="navbar-brand">
+                        <img src="assets/img/logo.png" 
+                        alt="Blogal logo" 
+                        width="50" 
+                        height="50" 
+                        class="d-inline-block align-text">
+                        Blogal
+                    </a>
+                    <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#benefits">Beneficios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#demo-video">Demostración</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#pricing">Precios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about-us">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#gallery">Galería</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#success-stories">Casos de Éxito</a></li>
+                            <li class="nav-item"><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
         </nav>
+        
         <div class="container">
-            <div class="cta-content">
-                <div class="cta-text">
-                    <h2>¡Unete a Blogal hoy mismo!</h2>
-                    <p>Comparte tus conocimientos en una comunidad interesada</p>
-                    <p>Encuentra artículos de tu interés</p>
-                    <p>Recomendaciones personalizadas</p>
-                    <a href="" class="cta-button">Se parte de la comunidad Blogal</a>
+            <div class="row text-center">
+                <div class="col-md-6">
+                   <br>
+                    <div class="container text-center">
+                        <div class="cta-content row row-cols-1">
+                            <h2 class="text-center mb-6 h2">¡Únete a Blogal hoy mismo!</h2>
+                            <p class="col">Comparte tus conocimientos en una comunidad interesada</p>
+                            <p class="col">Encuentra artículos de tu interés</p>
+                            <p class="col">Recomendaciones personalizadas</p>
+                            <a href="" class="cta-button">Se parte de la comunidad Blogal</a>
+                        </div>
+                    </div>
+                    <img src="assets/img/header/cta_1.jpg" 
+                    alt="Imagen CTA" 
+                    class="feature-icon img-fluid mb-3 rounded-corners"
+                    width="400px"
+                    height="400px"
+                    >
                 </div>
-                <div class="cta-image">
-                    <img src="assets/img/header/cta_2.jpg" alt="">
-                </div>
-            </div>
-            <div class="cta-content-2">
-                <div class="cta-text-2">
-                    <p>En Blogal Encontrarás una comunidad de escritores y lectores que apoyan el contenido de calidad<p>
+                <div class="col-md-6 main-cta">
+                    <br>
+                    <img src="assets/img/header/cta_2.jpg" 
+                    alt="Imagen CTA" 
+                    class="feature-icon img-fluid mb-3 rounded-corners"
+                    width="400px"
+                    height="400px">
+                    
+                        <div class="cta-content-message">
+                            <p class="col h2">En blogal encontrarás una comunidad de escritores y lectores que apoyan el contenido de calidad</p>  
+                        </div>
+                    <br><br><br>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <!--Fin Header-->
 
     <!--Inicio Beneficios-->
+    <section id="benefits">
+        <div class="container">
+            <h2 class="text-center">Beneficios Únicos de Blogal</h2>
+            <div class="benefits-content">
+                <div class="benefit-item">
+                    <h3>Monetización Eficiente</h3>
+                    <p>Genera ingresos a través de múltiples opciones de monetización, incluyendo suscripciones, publicidad y donaciones directas de los lectores.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Comunidad Activa</h3>
+                    <p>Únete a una comunidad vibrante de escritores y lectores que interactúan y apoyan el contenido de calidad.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Recomendaciones Personalizadas</h3>
+                    <p>Disfruta de recomendaciones de contenido personalizadas basadas en tus intereses y hábitos de lectura.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Fácil de Usar</h3>
+                    <p>Interfaz intuitiva y herramientas fáciles de usar que te permiten concentrarte en crear contenido de calidad.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Soporte 24/7</h3>
+                    <p>Accede a soporte técnico y de comunidad las 24 horas del día, los 7 días de la semana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--Fin Beneficios-->
 
     <!--Inicio Testimonios-->
+    <section id="testimonials">
+        <div class="container testimonials-grid">
+            <h2 class="text-center mb-4 "><br>Testimonios</h2>
+            <div class="row text-center testimonials">
+                <div class="col-md-4">
+                    <img src="assets/img/testimonials/persona_1.jpg"
+                    alt="Imagen CTA"
+                    class="feature-icon img-fluid mb-3 rounded-corners"
+                    width="400px"
+                    height="400px"
+                    >
+                    <h4>Miguel Soto</h4>
+                    <p>Estudiante de Literatura.</p>
+                    <p>"Blogal me ha ayudado a desarrollar mis habilidades de escritura académica y a recibir valiosos comentarios."</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/testimonials/persona_2.jpg"
+                    alt="Imagen CTA"
+                    class="feature-icon img-fluid mb-3 rounded-corners"
+                    width="400px"
+                    height="400px"
+                    >
+                    <h4>Juan Gómez</h4>
+                    <p>Estudiante de Bioligía</p>
+                    <p>"Como estudiante, Blogal ha sido una herramienta invaluable para complementar mi formación académica. He aprendido mucho leyendo los blogs de otros investigadores"</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/testimonials/persona_3.jpg"
+                    alt="Imagen CTA"
+                    class="feature-icon img-fluid mb-3 rounded-corners"
+                    width="400px"
+                    height="400px"
+                    >
+                    <h4>Sergio Alvarez</h4>
+                    <p>Economista</p>
+                    <p>"La función de comentarios de Blogal ha fomentado un diálogo enriquecedor entre los miembros de la comunidad. Gracias a ella, he podido establecer colaboraciones con otros investigadores y ampliar mi red de contactos."</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="assets/img/testimonials/persona_4.jpg"
+                    alt="Imagen CTA"
+                    class="feature-icon img-fluid mb-3 rounded-corners"
+                    width="400px"
+                    height="400px"
+                    >
+                    <h4>María López</h4>
+                    <p>Licenciada en Química</p>
+                    <p>"He encontrado inspiración y apoyo para mis proyectos de investigación." </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/testimonials/persona_5.jpg"
+                    alt="Imagen CTA"
+                    class="feature-icon img-fluid mb-3 rounded-corners"
+                    width="400px"
+                    height="400px"
+                    >
+                    <h4>Sofia Poma</h4>
+                    <p>Lectora</p>
+                    <p>"Gracias a Blogal he encontrado mucho contenido de mi interes"</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/testimonials/persona_6.jpg"
+                    alt="Imagen CTA"
+                    class="feature-icon img-fluid mb-3 rounded-corners"
+                    width="400px"
+                    height="400px"
+                    >
+                    <h4>Gabriela Ruiz</h4>
+                    <p>Estudiante de Biología</p>
+                    <p>"Blogal ha sido un complemento perfecto para mis estudios de Biología. Me encanta leer los blogs de investigadores sobre temas que me interesan."</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--Fin Testimonios-->
 
-    <!--Inicio Demostracion-->
-    <!--Fin Demostracion-->
+    <!--Inicio Demostración-->
+    <section id="demo-video">
+    </section>
+    <!--Fin Demostración-->
 
     <!--Inicio Precios-->
+    <section id="pricing">
+        <div class="container">
+            <br><br>
+            <h2 class="text-center mb-4">Planes de Precios</h2>
+            <div class="row text-center pricing-content">
+                <div class="col-md-4">
+                    <div class="pricing-item pricing-copper">
+                        <h3>Plan Básico</h3>
+                        <p>$5/mes</p>
+                        <ul>
+                            <li>Acceso a artículos gratuitos</li>
+                            <li>Recomendaciones personalizadas</li>
+                            <li>Soporte básico</li>
+                        </ul>
+                        <a href="#" class="pricing-button">Seleccionar</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-item pricing-silver">
+                        <h3>Plan Pro</h3>
+                        <p>$15/mes</p>
+                        <ul>
+                            <li>Todo en el Plan Básico</li>
+                            <li>Acceso a artículos premium</li>
+                            <li>Monetización de contenido</li>
+                            <li>Soporte prioritario</li>
+                        </ul>
+                        <a href="#" class="pricing-button">Seleccionar</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-item pricing-gold">
+                        <h3>Plan Empresarial</h3>
+                        <p>$30/mes</p>
+                        <ul>
+                            <li>Todo en el Plan Pro</li>
+                            <li>Acceso a herramientas avanzadas</li>
+                            <li>Consultoría personalizada</li>
+                            <li>Soporte 24/7</li>
+                        </ul>
+                        <a href="#" class="pricing-button">Seleccionar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--Fin Precios-->
 
     <!--Inicio Nosotros-->
+    <section id="about-us">
+        <div class="container">
+            <h2 class="text-center">Acerca de Nosotros</h2>
+            <div class="about-us-content">
+                <div class="about-us-item">
+                    <h3>Nuestra Historia</h3>
+                    <p>Blogal fue fundada en 2024 con la misión de conectar escritores y lectores de todo el mundo. Desde entonces, hemos crecido hasta convertirnos en una plataforma dedicada a compartir conocimientos y experiencias.</p>
+                </div>
+                <div class="about-us-item">
+                    <h3>Nuestra Misión</h3>
+                    <p>Facilitar la creación y el intercambio de contenido de calidad, proporcionando a los escritores las herramientas necesarias para monetizar su trabajo y a los lectores una experiencia personalizada y enriquecedora.</p>
+                </div>
+                <div class="about-us-item">
+                    <h3>Nuestra Visión</h3>
+                    <p>Ser la plataforma de referencia para escritores y lectores, promoviendo una comunidad activa y comprometida que valore el contenido de calidad y el intercambio de conocimientos.</p>
+                </div>
+                <div class="about-us-item">
+                    <h3>Nuestros Valores</h3>
+                    <ul>
+                        <li>Calidad: Nos comprometemos a ofrecer contenido de alta calidad.</li>
+                        <li>Innovación: Buscamos constantemente nuevas formas de mejorar la experiencia de nuestros usuarios.</li>
+                        <li>Comunidad: Fomentamos una comunidad inclusiva y solidaria.</li>
+                        <li>Transparencia: Actuamos con honestidad y claridad en todas nuestras acciones.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--Fin Nosotros-->
 
-    <!--Inicio Galeria-->
-    <!--Fin Galeria-->
+    <!--Inicio Galería-->
+    <section id="gallery">
+    </section>
+    <!--Fin Galería-->
 
     <!--Inicio Faqs-->
+    <section id="faqs">
+<!--        <h1>Preguntas y respuestas</h1>-->
+        <div class="faqs">
+            <div>
+                <div class="barra_blanca">
+                    <h2>Preguntas frecuentes</h2>
+                </div>
+                <div class="barra_fondo">
+                    <p>¿Qué ofrece Blogal?</p>
+                </div>
+                <div class="barra_blanca">
+                    <p>Blogal brinda ofrece una plataforma para leer y publicar articulos. Pudiendo los creadores monetizar
+                        su contenido facilmente mediante suscripciones o donaciones.</p>
+                </div>
+                <div class="barra_fondo">
+                    <p>¿Quiénes pueden usar Blogal?</p>
+                </div>
+                <div class="barra_blanca">
+                    <p>Personas que deseen generar ingresos compartiendo sus conocimientos y lectores interesados en apoyar
+                        artículos de calidad </p>
+                </div>
+                <div class="barra_fondo">
+                    <p>¿Cuánto cuesta usar Blogal?</p>
+                </div>
+                <div class="barra_blanca">
+                    <p>Blogal ofrece la opción de crear artículos gratuitos que todos pueden leer y articulos exclusivos
+                        para usuarios con una subscripción</p>
+                </div>
+            </div>
+            <div>
+                <img src="assets/img/faqs/faq_3.jpg" width="120%"  alt="Personas realizando preguntas">
+            </div>
+        </div>
+
+    </section>
     <!--Fin Faqs-->
 
     <!--Inicio Registro-->
-    
+    <section id="registry">
+    </section>
     <!--Fin Registro-->
 
-    <!--Inicio Casos de Exito-->
-    <!--Fin Casos de Exito-->
-    <div class="footer">
-        <div class="footer-text">
-            <p>2024. Blogal. Todos los derechos reservados</p>
-            <p>Contacto: dev@blogal.com</p>
+    <!--Inicio Casos de Éxito-->
+    <section id="success-stories">
+        <div class="container success-stories-grid">
+            <h2 class="text-center mb-4 "><br>Casos de Éxito</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="assets/img/success-stories/success-story_1.jpg"
+                    alt="Imagen CTA"
+                    class="feature-icon img-fluid mb-3 rounded-corners"
+                    width="400px"
+                    height="400px"
+                    >
+                    <h4>Javier Puentes</h4>
+                    <p>Biólogo y divulgador científico</p>
+                    <p>Javier es un biólogo apasionado por la conservación del medio ambiente y la 
+                        biodiversidad. Durante años, había querido compartir su investigación y 
+                        onocimientos sobre especies en peligro de extinción con un público más 
+                        amplio, pero no podía encontrar una plataforma que le convenciera para 
+                        publicar contenido accesible y monetizarlo de forma sostenible. Al descubrir 
+                        Blogal, Javier comenzó a escribir artículos sobre temas como la pérdida de 
+                        biodiversidad, la conservación de los ecosistemas y los impactos de la contaminación 
+                        ambiental. Utilizando Blogal, Javier pudo conocer a su audiencia y ofrecer contenido 
+                        especializado, desde estudiantes de biología hasta entusiastas del medio ambiente. Usa 
+                        herramientas de análisis para identificar qué temas generan mayor interés y ajusta su 
+                        enfoque a estos. Además, ofrece contenidos exclusivos, como estudios de campo e informes 
+                        de investigación en zonas remotas, que sus suscriptores apoyan mediante donaciones.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/success-stories/success-story_3.jpg"
+                    alt="Imagen CTA"
+                    class="feature-icon img-fluid mb-3 rounded-corners"
+                    width="400px"
+                    height="400px"
+                    >
+                    <h4>Camila Alvarado</h4>
+                    <p>Escritora de guías de viaje</p>
+                    <p>Camila, apasionada de los viajes, siempre habia querido compartir sus
+                         experiencias y recomendaciones con un público más amplio. 
+                         Aunque publica frecuentemente en las redes sociales, 
+                         no ha encontrado un espacio adecuado para monetizar su contenido. 
+                         Al incorporarse a Blogal, comenzó a escribir artículos sobre destinos 
+                         únicos y consejos prácticos para viajeros. Utilizando las herramientas de 
+                         análisis de Blogal, pudo ver qué tipo de contenido resonaba más en su audiencia, 
+                         lo que la ayudó a ajustar su enfoque. En poco tiempo su audiencia creció y, 
+                         gracias al sistema de suscripciones y donaciones, empezó a generar ingresos 
+                         suficientes para financiar sus próximos viajes. Hoy, Camila es una de las 
+                         escritoras más leídas en Blogal y ha solidificado su carrera como creadora de 
+                         contenido de viajes.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/success-stories/success-story_2.jpg"
+                    alt="Imagen CTA"
+                    class="feature-icon img-fluid mb-3 rounded-corners"
+                    width="400px"
+                    height="400px"
+                    >
+                    <h4>Valeria Vásquez</h4>
+                    <p>Estudiante de Arte</p>
+                    <p>Valeria es una joven estudiante de arte que siempre quiso aprender más sobre 
+                        técnicas creativas y cómo otros artistas aplican sus conocimientos en el 
+                        ámbito profesional. Si bien Valeria adquiere una buena base teórica en sus 
+                        cursos, ella buscaba algo que le sirva de inspiración para sus proyectos 
+                        personales, gracias a Blogal encontró la inspiración que necesitaba. Como 
+                        lectora, Valeria utilizó Blogal para acceder a artículos que exploran procesos 
+                        creativos, tutoriales y entrevistas con artistas que comparten sus experiencias 
+                        profesionales. Uno de los aspectos que más le ha servido es la posibilidad de 
+                        seguir una serie de artículos que abordan el desarrollo de proyectos desde cero, 
+                        los cuales ha podido aplicar directamente a sus estudios. Gracias a las 
+                        recomendaciones personalizadas de Blogal, Valeria descubrió nuevos enfoques 
+                        para mejorar sus proyectos y encontró recursos valiosos para su formación. 
+                       </p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!--Fin Casos de Éxito-->
+
+    <!--Inicio Formulario de Contacto-->
+
+    <section id="contacto">
+        <div class="container">
+            <md-divider role="separator" inset></md-divider>
+            <h2 class="md-typescale-headline-medium">Contáctenos</h2>
+            <div class="area_formulario">
+                <div class="formulario">
+                    <form>
+                        <md-filled-text-field
+                                label="Nombre"
+                                required
+                                supporting-text="*requerido"
+                                type="text"
+                                error-text="No puede estar incompleto">
+                        </md-filled-text-field>
+                        <br>
+                        <md-filled-text-field
+                                label="Email"
+                                required
+                                supporting-text="*requerido"
+                                type="email"
+                                error-text="No puede estar incompleto">
+                        </md-filled-text-field>
+                        <br>
+                        <md-filled-text-field
+                                type="textarea"
+                                label="Mensaje"
+                                required
+                                rows="3">
+                        </md-filled-text-field>
+                        <br>
+                        <br>
+                        <md-filled-button>Enviar</md-filled-button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <md-divider role="separator" inset></md-divider>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="footer-bar">
+            <ul>
+                <li class="footer-text text-center right">
+                    <p>2024. Blogal. Todos los derechos reservados.</p>
+                    <p>Contacto: dev@blogal.com</p>
+                    <p>Instagram: @blogal</p>
+                    <p>Facebook: Blogal</p>
+                </li>
+                <li class="return-up-button">
+                    <a href="#header">Volver al inicio</a>
+                </li>
+            </ul>  
+        </div>
+    </section>
+
 </body>
 </html>
