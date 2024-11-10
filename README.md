@@ -1,0 +1,6 @@
+# Blogal
+Blogal es un startup dirigida por cinco estudiantes de la carrera de Ciencias de la Computación de la Universidad Peruana de Ciencias Aplicadas. Este proyecto busca transformar la industria de publicación y monetización de artículos en línea. Lo que nos diferencia como plataforma es la facilidad que le proporcionamos a los creadores de contenido para publicar y generar artículos a través de sus ingresos.
+
+La misión de Blogal es ofrecer una solución en forma de plataforma web para que los creadores de contenido puedan publicar artículos y monetizarlos. Nosotros le daremos a los creadores la opción de obtener ingresos mediante suscripciones y donaciones. Además, les proporcionaremos herramientas de análisis sobre el rendimiento de sus artículos. Por otro lado, los lectores tendrán una experiencia intuitiva sobre la página con opciones de personalización.
+
+Nuestro propósito es redefinir cómo los creadores de contenido publican y monetizan sus artículos, proporcionando una plataforma que sea fácil de usar y accesible para todos. Mediante la integración de plataformas modernas y amigables a los usuarios, Blogal se compromete en innovar y crear una plataforma global para nuestros usuarios.
