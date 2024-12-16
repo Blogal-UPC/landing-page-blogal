@@ -277,13 +277,15 @@ header{
 #success-stories img{
     width: 350px;
     height: 350px;
-}
 #about-us{
-    margin:5%
+    margin:5%;
 }
 #benefits{
-    margin:5%
-    
+    margin:5%;    
+}
+
+#demo-video{
+    margin-left: 30%;
 }
 #demo-video{
     margin-left: 30%;
